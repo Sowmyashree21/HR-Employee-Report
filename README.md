@@ -1,4 +1,4 @@
-# Zepto HR Analytics Project (SQL + Power BI)
+# HR Analytics Project (SQL + Power BI)
 
 This project demonstrates how to clean, transform, and analyze HR data using MySQL and build an HR analytics dashboard in Power BI. 
 The project is based on a mock dataset and simulates real-world HR metrics and business analysis.
