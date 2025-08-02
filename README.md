@@ -1,125 +1,140 @@
 # HR Analytics Project with SQL and Power BI
 
-This project started as a deep dive into HR data, the kind of messy, inconsistent dataset that’s both frustrating and fun to work with. I followed along with a YouTube tutorial and decided to build it out into a full portfolio piece that showcases how I approach data cleaning, analysis, and storytelling using SQL and Power BI.
+As a data analyst in training, I wanted to explore a domain that directly impacts business strategy and employee well-being — Human Resources. This project is the result of a hands-on exercise in working with imperfect HR data, cleaning and transforming it with SQL, and presenting the findings through a clear, interactive Power BI dashboard.
+
+It’s not just about the numbers — it’s about telling a meaningful story using data.
 
 ---
 
-## About the Project
+## Objective
 
-The dataset represents fictional employee information with things like hire and termination dates, department, gender, race, location, and so on. 
-My goal was to:
+The aim of this project was to:
 
-- Clean and prepare the data using SQL
-- Answer key HR-related business questions
-- Build an interactive Power BI dashboard to present the insights
+- Clean and prepare HR data using SQL
+- Define and analyze key HR performance indicators (KPIs)
+- Build an interactive Power BI dashboard to make the insights accessible and actionable
+- Practice real-world analytical thinking, from data wrangling to business storytelling
 
 ---
 
 ## Tools Used
 
-- **MySQL** for data cleaning and transformation
-- **Power BI** for creating visuals and the final dashboard
-- **Excel** for some quick checks and viewing the CSVs
-- **GitHub** to document the process and share the work
+- **MySQL** – For data cleaning, transformation, and deriving metrics  
+- **Power BI** – For building visuals and dashboards  
+- **Excel** – For quick validation, formatting, and Power BI import  
+- **GitHub** – To host and version the project  
 
 ---
 
-## KPIs and Metrics Covered
+## Dataset Overview
 
-This project focused on exploring a range of HR-related KPIs using SQL, which were later visualized in Power BI. These metrics reflect the kinds of insights that HR and operations teams typically look for when analyzing workforce data.
+The dataset simulates employee records and includes:
 
-- Gender breakdown of employees
-- Diversity by race and ethnicity
-- Employee distribution across age groups
-- Remote vs headquarters staffing
-- Average tenure of terminated employees
-- Gender split across departments
-- Frequency of job titles across the organization
-- Turnover rate by department
-- Headcount by state
-- Hiring and termination trends over the years
-- Average tenure across departments
+- Demographics: gender, race, birth date, location
+- Employment details: department, job title, hire and termination dates
+- Employment type: remote or HQ
+
+While fictional, this dataset closely reflects the type of data available in real HRIS systems and helped simulate realistic data challenges.
 
 ---
 
-## Data Cleaning Process
+## KPIs and Metrics Explored
 
-The original data had a few problems:
-- Inconsistent date formats (some with slashes, some with dashes, some with timestamps)
-- Empty values for termination dates
-- No column for age, even though we had birthdates
+The analysis covered common HR metrics that offer insights into organizational health and employee trends:
 
-So I wrote SQL queries to:
-- Standardize and convert all date columns
-- Set invalid or empty `termdate` values to `NULL`
-- Calculate employee age using `birthdate`
-- Create age groupings and tenure-based metrics
+- Headcount by gender, department, and state
+- Racial and ethnic diversity of the workforce
+- Employee age group distributions
+- Proportion of remote vs headquarters-based employees
+- Tenure (overall and department-wise)
+- Attrition and turnover rates by department
+- Job title frequency
+- Historical hiring and termination trends
 
-This part of the project focused on cleaning and structuring the data so it was usable for analysis and visualization.
+These KPIs serve as the foundation for workforce planning, diversity tracking, and retention strategies.
 
 ---
 
-## Key Questions I Answered
+## Data Cleaning & Transformation
 
-Here are some of the questions I used SQL to explore (and later visualized in Power BI):
+The raw dataset required significant preparation before analysis:
 
-1. What’s the gender distribution of employees?
-2. How racially diverse is the workforce?
-3. What does the age breakdown look like?
-4. How many employees work remotely vs at HQ?
-5. What’s the average length of employment for terminated employees?
-6. How is gender distributed across departments?
-7. What are the most common job titles?
-8. Which departments have the highest attrition rate?
-9. Where are employees located across the U.S.?
-10. How has the company’s employee count changed over the years?
-11. What is the average tenure by department?
+- **Standardized date formats** from inconsistent formats like `MM/DD/YYYY` vs `YYYY-MM-DD`
+- **Created age and tenure columns** using SQL `DATEDIFF` and conditional logic
+- **Handled null or placeholder values** in `termdate` and other critical fields
+- **Created new features** like age groupings, tenure groupings, attrition flags
 
-These insights reflect the kinds of things HR teams might look at to make data-driven decisions.
+These steps were done entirely in SQL to ensure the data was ready for analysis before importing into Power BI.
+
+---
+
+## Key Business Questions Explored
+
+I approached the dataset by asking realistic HR and business questions, such as:
+
+- What is the gender distribution of the workforce?
+- How diverse is the organization by race and ethnicity?
+- What age groups dominate the employee population?
+- How many employees work remotely versus on-site?
+- Which departments have the highest turnover rates?
+- What is the average tenure of employees across departments?
+- How have hiring and terminations changed over time?
+- What are the most common roles or job titles?
+- Which states have the highest headcount?
+
+These questions formed the basis for SQL exploration and later visualized into Power BI charts.
 
 ---
 
 ## Power BI Dashboard
 
-The dashboard I created includes the following visuals:
+The Power BI dashboard provides an interactive view of all key HR trends. The main sections include:
 
-1. **Gender Distribution**  
-2. **Race Distribution**  
-3. **Headquarters vs Remote Split**  
-4. **Hiring and Attrition Over Time**  
-5. **Age Group Distribution and Gender Breakdown**  
-6. **Employee Count by State**  
-7. **Turnover Rate by Department**  
-8. **Gender Split Across Departments**
+1. **Workforce Composition**  
+   - Gender and race breakdown  
+   - Age group distribution  
+   - Job title frequencies  
 
-The dashboard is interactive and designed to give HR managers a quick overview of workforce trends.
+2. **Geographical Insights**  
+   - Headcount by U.S. state  
+   - Remote vs headquarters staff  
 
----
+3. **Turnover & Retention**  
+   - Hiring vs attrition trends over time  
+   - Turnover rates by department  
+   - Average tenure by department  
 
-## How to Use This
-
-1. Run each SQL query in MySQL to get the required outputs.
-2. Export the results of each query to separate Excel files (or sheets).
-3. Use those Excel files as data sources inside Power BI.
-4. Build visuals and dashboards based on each exported dataset.
-5. Open the .pbix file in Power BI Desktop to view or customize the dashboard.
+Each visual can be filtered or interacted with to help HR managers make data-driven decisions.
 
 ---
 
-## Why I Did This
+## Key Takeaways
 
-This project was part of my effort to sharpen both my SQL and Power BI skills and build out real, portfolio-worthy examples of how I approach business problems with data. It’s also a great reminder that even with fictional datasets, you can tell real stories and answer questions that matter to stakeholders.
+This project helped me:
+
+- Practice working with messy, real-world data
+- Develop SQL skills for data wrangling and KPI derivation
+- Design dashboards that tell a clear, compelling story
+- Build confidence in using Power BI for end-to-end reporting
+
+It reinforced that analytics is more than tools — it's about asking the right questions, structuring data for answers, and delivering insights that matter.
 
 ---
 
-## Credits
+## Acknowledgements
 
-I followed the core structure and inspiration from this video:  
-[SQL & PowerBI Portfolio Project for Data Analysts](https://youtu.be/PzyZI9uLXvY)
+Project inspired by:  
+**[SQL & PowerBI Portfolio Project for Data Analysts – YouTube](https://youtu.be/PzyZI9uLXvY)**
 
 ---
 
-## Note
+## About Me
 
-The dataset is fictional. This project is meant for learning and showcasing data analysis skills. If you're a hiring manager or someone reviewing this,  thanks for reading this far!
+I’m an aspiring data analyst, actively building my portfolio by working on real-world inspired case studies in business, operations, HR analytics and many more. This project is part of that journey. 
+Thank you for reading!
+
+Feel free to connect or explore my other work:  
+[GitHub - Sowmyashree21](https://github.com/Sowmyashree21)
+
+## Folder Structure
 
