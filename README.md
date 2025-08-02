@@ -1,8 +1,9 @@
 # HR Analytics Project with SQL and Power BI
 
-As a data analyst in training, I wanted to explore a domain that directly impacts business strategy and employee well-being — Human Resources. This project is the result of a hands-on exercise in working with imperfect HR data, cleaning and transforming it with SQL, and presenting the findings through a clear, interactive Power BI dashboard.
+As a data analyst in training, I wanted to explore a domain that directly impacts business strategy and employee well-being, Human Resources. 
+This project is the result of a hands-on exercise in working with imperfect HR data, cleaning and transforming it with SQL and presenting the findings through a clear, interactive Power BI dashboard.
 
-It’s not just about the numbers — it’s about telling a meaningful story using data.
+It’s not just about the numbers, it’s about telling a meaningful story using data.
 
 ---
 
@@ -34,7 +35,7 @@ The dataset simulates employee records and includes:
 - Employment details: department, job title, hire and termination dates
 - Employment type: remote or HQ
 
-While fictional, this dataset closely reflects the type of data available in real HRIS systems and helped simulate realistic data challenges.
+While being fictional, this dataset closely reflects the type of data available in real HR systems and helped simulate realistic data challenges.
 
 ---
 
@@ -135,6 +136,3 @@ Thank you for reading!
 
 Feel free to connect or explore my other work:  
 [GitHub - Sowmyashree21](https://github.com/Sowmyashree21)
-
-## Folder Structure
-
