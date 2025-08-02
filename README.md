@@ -40,6 +40,8 @@ This project focused on exploring a range of HR-related KPIs using SQL, which we
 - Hiring and termination trends over the years
 - Average tenure across departments
 
+---
+
 ## Data Cleaning Process
 
 The original data had a few problems:
