@@ -107,6 +107,10 @@ The Power BI dashboard provides an interactive view of all key HR trends. The ma
 
 Each visual can be filtered or interacted with to help HR managers make data-driven decisions.
 
+<img width="1233" height="718" alt="image" src="https://github.com/user-attachments/assets/69901e45-64e7-416e-b50f-bedf00a71c8d" />
+
+<img width="1127" height="702" alt="image" src="https://github.com/user-attachments/assets/6a7d964b-f7c2-4770-9991-992e31a38cb1" />
+
 ---
 
 ## Key Takeaways
